@@ -7,7 +7,7 @@ const Login=()=>{
     const [user, setUser]=useState({});
     const login =(e)=>{
         e.preventDefault();
-        axios.post("https://unique-realestate.onrender.com/login",user)
+        axios.post("https://u5-realestate-server.onrender.com/login",user)
         .then(res=>{
             const temp=(res.data.user.email).split("@");
             const name=temp[0];

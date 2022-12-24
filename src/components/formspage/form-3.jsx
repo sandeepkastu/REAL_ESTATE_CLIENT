@@ -68,7 +68,7 @@ const Form3 = ({ formData, setFormData }) => {
             <span>Upload Image</span>
             <input
               type="file"
-              onChange={(e) => setImage(e.target.files[0])}
+              onChange={(e) => (e.target.files[0])}
             />
           </div>
             

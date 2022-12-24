@@ -15,7 +15,7 @@ const Desk1 = () => {
         }
     }
     useEffect(() => {
-        axios.get("https://unique-realestate.onrender.com/form",d1).then((respond) => {
+        axios.get("https://u5-realestate-server.onrender.com/form",d1).then((respond) => {
             setPost(respond.data);
         })
     }, []);

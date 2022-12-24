@@ -10,7 +10,7 @@ const Register=()=>{
         const {email,password,cpassword}=user;
         if(email && password && password===cpassword){
            // alert("posted")
-            axios.post("http://localhost:5000/register",user)
+            axios.post("https://u5-realestate-server.onrender.com/register",user)
             .then(res=>{
                 // console.log(res.status)
                 alert(res.data.message)
